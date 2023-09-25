@@ -68,10 +68,10 @@ app.get('/adminform',async (req, res)=>{
 })
 
 
-app.get('/:id', async (req, res) => {
+app.get('/find/:id', async (req, res) => {
     const {id} = req.params
     const blogDetails = await Kay.findById({_id: id})
-    res.render('readmore.ejs', {blogDetails})
+    res.render('readmore.ejs', {foundUser, blogDetails})
 })
 
 

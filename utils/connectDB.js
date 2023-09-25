@@ -1,8 +1,3 @@
-// const mongoose = require('mongoose')
-// const dbLink = 'mongodb+srv://judeoluchi:Cherechi_1@cluster0.bvn952f.mongodb.net/test'
-
-
-
 require('dotenv').config()               //.
 const mongoose = require('mongoose');      //.
 console.log(process.env.DB)                //.
@@ -10,7 +5,7 @@ console.log(process.env.DB)                //.
 function connectDB(){
     try{
         console.log('connecting to db')      
-        mongoose.connect(process.env.DB)      //.
+        mongoose.connect(process.env.DB)      //
 
         // mongoose.connect(dbLink,{
         //     useNewUrlParser:true,

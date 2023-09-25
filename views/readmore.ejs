@@ -6,9 +6,29 @@
     <title>Document</title>
     
 </head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #container{
+        display: flex;
+        justify-content: center;
+    }
+
+    p{
+       text-align: left
+    }
+    
+    </style>
+
 <body>
     <div id="container">
-     
+        <div id="container1">
+                         <div><img src=<%=foundUser.image%> alt="image" ></div>
+                        <div> <%= foundUser.username %> </div>
+            </div>
         <div id="container2">
             <div><img src=<%= blogDetails.image %> alt=""></div>
             <h1>AUTHOR<%= blogDetails.author %></h1>

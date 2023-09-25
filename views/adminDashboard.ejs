@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+     box-sizing: border-box; 
 }
 
 #container {
@@ -26,7 +26,7 @@
 
 #container1 img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #head {
@@ -46,7 +46,7 @@ hr {
 
 #articles {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 330px);
     gap: 40px;
     justify-content: center;
 }
@@ -63,7 +63,7 @@ hr {
 
 #details {
     margin-top: 10px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     gap: 5px;
 }
@@ -94,7 +94,7 @@ hr {
                   <h3>AUTHOR<%= element.author %></h3>
                   <h4>TITLE: <%= element.title %></h4>
                   <h4>CATEGORY: <%= element.category %></h4>
-                  <p><%= element.description.substring(0, 300) + "... " %><a href=/<%= element._id %>>see more</a></p>
+                  <p><%= element.description.substring(0, 300) + "... " %><a href=find/<%= element._id %>>see more</a></p>
               </div>
            </div>
           <% }) %>
